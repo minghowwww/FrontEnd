@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="store">
+<!-- ng-app指令表示在页面加载时运行这个angular模块-->
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript" src="angular.min.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="producct.js"></script>
+	<link rel="stylesheet" type="text/css" href="bootstrap.min.css">
+	<style type="text/css">
+		/*控件自动校验*/
+		.ng-invalid.ng-dirty{
+			border-color: #FA787E;
+		}
+		.ng-valid.ng-dirty{
+			border-color: #78FA89;
+		}
+	</style>
+</head>
+<body>
+	<!-- 使用as来为controller取一个别名 -->
+	<div ng-controller="StoreController as store">
+		<ul class="list-group">
+			<li class="list-group-item"  ng-repeat="product in store.products">
+                <!--引入页面，需要在web服务器中打开才可以，默认是调用ajax来实现的。-->
+				<!--<h3 ng-include="'title.html'">-->
+					<!---->
+				<!--</h3>-->
+                <!--<h3>-->
+                    <!--利用自定义标签，不要使用单标记的形式，因为有些浏览器不识别单标记的形式-->
+                    <!--<product-title></product-title>-->
+                <!--</h3>-->
+                <!--属性型指令-->
+                <h3 product-title></h3>
+				<img ng-src="{{product.images[0].full}}" alt="">
+                <product-panels></product-panels>
+			</li>
+		</ul>
+
+	</div>
+
+</body>
+</html>
