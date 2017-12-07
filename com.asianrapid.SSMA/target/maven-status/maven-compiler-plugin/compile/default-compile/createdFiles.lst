@@ -1,0 +1,14 @@
+com\asianrapid\pojo\Student.class
+com\asianrapid\controller\PageController.class
+com\asianrapid\pojo\StudentExample$Criteria.class
+com\asianrapid\service\TestService.class
+com\asianrapid\controller\TestController.class
+com\asianrapid\commons\BSTableResult.class
+com\asianrapid\dao\StudentMapper.class
+com\asianrapid\service\impl\TestServiceImpl.class
+com\asianrapid\pojo\StudentExample$Criterion.class
+com\asianrapid\pojo\StudentExample.class
+com\asianrapid\commons\StudentCellStyle.class
+com\asianrapid\commons\AsianrapidResult.class
+com\asianrapid\pojo\StudentExample$GeneratedCriteria.class
+com\asianrapid\commons\BSTableParam.class
